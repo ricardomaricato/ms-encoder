@@ -5,6 +5,8 @@ import (
 	"ms-encoder/domain"
 
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/sqlite"
+	_ "github.com/lib/pq"
 )
 
 type Database struct {
