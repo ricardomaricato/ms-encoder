@@ -3,6 +3,7 @@ module ms-encoder
 go 1.13
 
 require (
+	cloud.google.com/go/storage v1.16.1 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20210307081110-f21760c49a8d
 	github.com/jinzhu/gorm v1.9.16
 	github.com/lib/pq v1.10.2
