@@ -22,10 +22,10 @@ var Mutex = &sync.Mutex{}
 
 func JobWorker(messageChannel chan amqp.Delivery, returnChan chan JobWorkerResult, jobService JobService, job domain.Job, workerID int) {
 
-	//{
-	//	"resource_id":"id do video da pessoa que enviou para nossa fila",
-	//	"file_path": "convite.mp4"
-	//}
+	// {
+	// 	"resource_id":"id do video da pessoa que enviou para nossa fila",
+	// 	"file_path": "convite.mp4"
+	// }
 
 	for message := range messageChannel {
 
