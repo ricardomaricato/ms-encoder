@@ -4,7 +4,6 @@
 
 Para rodar em modo de desenvolvimento, siga os seguintes passos:
 
-* Duplique o arquivo `.env.example` para `.env`
 * Execute o docker-compose up -d
 * Acesse a administração do rabbitmq e crie uma exchange do tipo `fannout`. Ela será uma `Dead Letter Exchange` para receber as mensagens que não forem processadas.
 * Crie uma `Dead Letter Queue` e faça o binding da mesma na `Dead Letter Exchange` que acaba de ser criada. Não há necessidade de routing_key.
@@ -19,7 +18,7 @@ Para executar o encoder rode o comando `make server` diretamente no container. E
 docker exec encoder-new2_app_1 make server
 ```
 
-Sendo que `microsservico-enconder_app_1` é o nome nome do container gerado pelo docker-compose.
+Sendo que `ms-enconder_app_1` é o nome nome do container gerado pelo docker-compose.
 
 ## Padrão de envio de mensagem para o encoder
 
